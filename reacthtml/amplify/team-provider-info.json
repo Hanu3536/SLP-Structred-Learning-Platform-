@@ -1,0 +1,29 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-slpamplify-dev-20314-authRole",
+      "UnauthRoleArn": "arn:aws:iam::369587611376:role/amplify-slpamplify-dev-20314-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::369587611376:role/amplify-slpamplify-dev-20314-authRole",
+      "Region": "ca-central-1",
+      "DeploymentBucketName": "amplify-slpamplify-dev-20314-deployment",
+      "UnauthRoleName": "amplify-slpamplify-dev-20314-unauthRole",
+      "StackName": "amplify-slpamplify-dev-20314",
+      "StackId": "arn:aws:cloudformation:ca-central-1:369587611376:stack/amplify-slpamplify-dev-20314/7662db70-1012-11ee-a0bf-025d00b202b8",
+      "AmplifyAppId": "d1ef83tuhz65bq"
+    },
+    "categories": {
+      "auth": {
+        "slpamplify9d125ac39d125ac3": {}
+      },
+      "function": {
+        "getslpcourses": {
+          "deploymentBucketName": "amplify-slpamplify-dev-20314-deployment",
+          "s3Key": "amplify-builds/getslpcourses-30654d6f485a67313039-build.zip"
+        }
+      },
+      "api": {
+        "slpcourseslist": {}
+      }
+    }
+  }
+}

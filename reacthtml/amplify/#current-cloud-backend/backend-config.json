@@ -1,0 +1,71 @@
+{
+  "api": {
+    "slpcourseslist": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "getslpcourses"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "auth": {
+    "slpamplify9d125ac39d125ac3": {
+      "customAuth": false,
+      "dependsOn": [],
+      "frontendAuthConfig": {
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyCharacters": [],
+          "passwordPolicyMinLength": 8
+        },
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito"
+    }
+  },
+  "function": {
+    "getslpcourses": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_getslpcourses_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "getslpcourses"
+        }
+      ]
+    },
+    "AMPLIFY_function_getslpcourses_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "getslpcourses"
+        }
+      ]
+    }
+  }
+}
